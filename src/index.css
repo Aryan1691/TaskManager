@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Nunito+Sans:opsz,wght@6..12,300&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* General reset and font settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  background-color: #f0f7fa;
+  color: #050b0d;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+/* Button active effect */
+button[type="submit"]:active {
+  transform: scale(0.1);
+}
+
+/* Custom button styles */
+.btn-outline-danger {
+  border-image: linear-gradient(to bottom, #07f747, #3cf10f, #41fd73) 1;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 3px 6px #fb0404;
+}
+
+/* Submit button */
+button[type="submit"] {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  border-image: linear-gradient(to bottom, #07f747, #3cf10f, #41fd73) 1;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px #cdfcc1;
+  color: #020001;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+/* Button hover effect background */
+button[type="submit"]:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #31d40c;
+  z-index: -1;
+}
+
+/* Button focus and hover color change */
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  color: white;
+}
+
+/* Button hover and focus background reveal */
+button[type="submit"]:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+/* Heading styling */
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 1% solid black;
+}
